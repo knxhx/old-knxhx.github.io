@@ -1,2 +1,2 @@
-# knxctyhx.github.io
+# knxhx.github.io
 Website for Knoxville City Hackathon
