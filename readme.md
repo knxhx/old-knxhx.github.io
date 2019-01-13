@@ -15,6 +15,7 @@ Note: While instruction are written with `yarn` you can also use the `npm` equiv
 
 * Use `yarn install` to install npm packages
 * `yarn build` to run all tasks
+* `yarn start` to actively developer with livereload & css injection via BrowserSync
 * `yarn prod` to run all tasks with production ready files (minified, etc)
 
 ## Under the hood
