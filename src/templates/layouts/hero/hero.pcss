@@ -3,7 +3,6 @@
     z-index: 2;
     padding-top: 20.99vw;
     padding-bottom: 5rem;
-    margin-bottom: 10rem;
     color: var(--Brand__Light);
     display: flex;
     justify-content: center;
@@ -11,9 +10,10 @@
     /* background: linear-gradient(0deg, var(--Brand__Orange), var(--Brand__GrayDark)); */
     /* background-size: 450% 450%; */
     animation: Gradient 10s ease infinite;
-
+    overflow: hidden;
     @media (--TabletLandscapeUp) {
         padding-top: 10rem;
+        padding-bottom: 17.5rem;
     }
 
     &__background {
@@ -21,7 +21,7 @@
         top: -10vh;
         right: -10vh;
         left: -10vh;
-        bottom: -10vh;
+        bottom: 10vh;
         z-index: -1;
         position: absolute;
         transform: rotate(4deg);
