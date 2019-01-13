@@ -9,8 +9,8 @@ function hero () {
   });
 
   countdown('#countdown', {
-    startDate: Date.now(),
-    endDate: new Date(2019, 2, 2)
+    startDate: new Date(2019, 2, 2),
+    endDate: null
   });
 
 }

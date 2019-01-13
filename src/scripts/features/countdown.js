@@ -32,8 +32,8 @@ function countdown (selector, options = {}) {
 
   const {
           // Destructure and set defaults
-          startDate = Date.now(),
-          endDate   = new Date(2000, 2, 2)
+          startDate = new Date(2000, 2, 2),
+          endDate   = null
         } = options;
 
   // Initial Run
