@@ -15,14 +15,14 @@ function getCountdownInterval (start, end) {
 function countdownRender (element, countdownObject) {
   const { months, days, hours, minutes, seconds } = countdownObject;
 
-  const monthTwoDigits = 9 < months ? months : `0${months}`;
+  const twoDigits = int => 9 < int ? int : `0${int}`;
 
   element.innerHTML    = `
-        <span class="months">${monthTwoDigits} Months</span>
-        <span class="days">${days} Days</span>
-        <span class="hours">${hours} Hours</span>
-        <span class="minutes">${minutes} Minutes</span>
-        <span class="seconds">${seconds} Seconds</span>
+        <span class="months">${twoDigits(months)} Months</span>
+        <span class="days">${twoDigits(days)} Days</span>
+        <span class="hours">${twoDigits(hours)} Hours</span>
+        <span class="minutes">${twoDigits(minutes)} Minutes</span>
+        <span class="seconds">${twoDigits(seconds)} Seconds</span>
         `;
 }
 
