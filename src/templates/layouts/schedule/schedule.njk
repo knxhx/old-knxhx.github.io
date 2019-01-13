@@ -1,0 +1,99 @@
+{% set base = 'schedule' %}
+{% set days =  [
+    {
+      title: 'Saturday',
+      date: '3/02',
+      events: [
+        {
+          title: 'Breakfast',
+          location: 'Pyxl',
+          time: '8:00',
+          meridiem: 'am'
+        },
+        {
+          title: 'Lunch',
+          location: 'Market Square',
+          time: '12:00',
+          meridiem: 'pm'
+        },
+        {
+          title: 'JTV Tech Talk',
+          location: 'Pyxl',
+          time: '2:00-2:30',
+          meridiem: 'pm'
+        },
+        {
+          title: 'Structure.sh Tech Talk',
+          location: 'Pyxl',
+          time: '2:30-2:45',
+          meridiem: 'pm'
+        },
+        {
+          title: 'Slide Show Karaoke',
+          location: 'Pyxl',
+          time: '5:00-6:00',
+          meridiem: 'pm'
+        },
+        {
+          title: 'Dinner',
+          location: 'Pyxl',
+          time: '5:00-6:00',
+          meridiem: 'pm'
+        }
+      ]
+    },
+    {
+      title: 'Sunday',
+      date: '3/03',
+      events: [
+        {
+          title: 'Breakfast',
+          location: 'Pyxl',
+          time: '8:00-9:00',
+          meridiem: 'am'
+        },
+        {
+          title: 'Hack Submission Deadline',
+          location: '<a href="">Submit </a>',
+          time: '11:00',
+          meridiem: 'am'
+        },
+        {
+          title: 'Hack Presentations & Judging',
+          location: 'At Your Tables',
+          time: '1:00',
+          meridiem: 'pm'
+        },
+        {
+          title: 'Closing Ceremonyx',
+          location: 'Scruffy City Hall',
+          time: 'Right after Presentation!',
+          meridiem: ''
+        }
+      ]
+    }
+  ]%}
+<section id="{{ base }}" class="{{ base }}">
+    <div class="container">
+        <header>
+            <h3 class="{{ base }}__title">Schedule</h3>
+        </header>
+        <ul class="days">
+            {% for day in days %}
+                {# <pre>{{ day | dump(2) }}</pre> #}
+                <li class="days__item">
+                    <h4 class="days__title">{{ day.title }}: <span data-count="days__date">{{ day.date | safe }}</span></h4>
+                    <ul class="events">
+                        {% for event in day.events %}
+                            <li class="events__item">
+                                <p class="events__title">{{ event.title }}</p>
+                                <p class="events__location">{{ event.location | safe }}</p>
+                                <p class="events__time">{{ event.time }}<span>{{ event.meridiem }}</span></p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

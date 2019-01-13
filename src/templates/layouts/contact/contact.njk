@@ -1,0 +1,49 @@
+{% set base = 'contact' %}
+{% set links =  [
+    {
+        title: 'Slack',
+        href: 'https://knoxdevs.slack.com',
+        icon: '#icon-slack-hash'
+    },
+    {
+        title: 'Twitter',
+        href: 'https://twitter.com/knxctyhx',
+        icon: '#icon-slack-hash'
+    },
+    {
+        title: 'Facebook',
+        href: 'https://facebook.com/knoxdevs',
+        icon: '#icon-slack-hash'
+    },
+    {
+        title: 'Instagram',
+        href: 'https://instagram.com/Knoxville%20City%20Hackathon',
+        icon: '#icon-slack-hash'
+    },
+    {
+        title: 'Email',
+        href: 'https://knxhx.org/cdn-cgi/l/email-protection#3058555c5c5f70465f5c5851535b431e5f4257',
+        icon: '#icon-slack-hash'
+    }
+] %}
+<section id="{{ base }}" class="{{ base }}">
+    <div class="container">
+        <header>
+            <h3>Reach out!</h3>
+        </header>
+        <div class="{{ base }}__content">
+            <p>Feel free to email us about the event, sponsoring us, partnering with us, or with any other
+                questions!</p>
+            {% for link in links %}
+                <a href="{{ link.href }}" class="button">
+                    <div class="icon">
+                        <svg role="img">
+                            <use xlink:href="{{ link.icon }}"></use>
+                        </svg>
+                    </div>
+                    <span>{{ link.title }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

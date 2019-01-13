@@ -1,0 +1,72 @@
+.schedule {
+    background-color: var(--Brand__Light);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    & .container {
+
+    }
+}
+
+.days {
+    padding-left: 0;
+    list-style-type: none;
+
+    &__title {
+        border-radius: var(--Border__Radius);
+        background-color: var(--Brand__Dark);
+        color: var(--Brand__Green);
+        padding: 1em;
+        font-size: 6vw;
+        margin-bottom: .5em;
+        @media (--TabletPortraitUp) {
+            font-size: 1.5em;
+        }
+    }
+    &__item {
+        max-width: 900px;
+    }
+
+    & a {
+        color: var(--Brand__Dark);
+    }
+}
+
+.events {
+    font-size: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    padding: .5em;
+
+
+    @media (--TabletPortraitUp) {
+        font-size: 1em;
+    }
+
+    > * {
+        font-family: var(--Font__Secondary);
+    }
+
+    &__item {
+        flex: 1 100%;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px dashed;
+
+        & > * {
+            flex: 1;
+            margin-right: 1em;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__time {
+        text-align: right;
+        max-width: 200px;
+    }
+}

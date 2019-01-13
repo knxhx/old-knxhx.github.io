@@ -1,0 +1,66 @@
+.hero {
+    padding-top: 20.99vw;
+    padding-bottom: 3rem;
+    color: var(--Brand__Light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Brand__Dark);
+    //background: linear-gradient(0deg, var(--Brand__Orange), var(--Brand__GrayDark));
+    background-size: 450% 450%;
+    animation: Gradient 10s ease infinite;
+
+    @media (--TabletLandscapeUp) {
+        padding-top: 10rem;
+    }
+
+    & .container {
+        width: 100%;
+    }
+
+    &__title {
+        min-height: 100px;
+        font-size: 10vw;
+
+        @media (--TabletPortraitUp) {
+            font-size: 4rem;
+        }
+
+        @media (--DesktopUp) {
+            font-size: 5rem;
+        }
+
+        & strong {
+            color: var(--Brand__Green)
+        }
+    }
+
+    &__description {
+        max-width: 700px;
+    }
+}
+
+
+.countdown {
+    min-height: 120px;
+    @media (--TabletPortraitUp) {
+        min-height: 220px;
+    }
+
+    &__numbers {
+        font-size: 7vw;
+        font-family: var(--Font__Secondary);
+
+        @media (--TabletPortraitUp) {
+            font-size: 3rem;
+        }
+
+        & span {
+            display: block;
+            line-height: 1.2em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

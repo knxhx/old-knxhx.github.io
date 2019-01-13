@@ -1,0 +1,29 @@
+{% set base = 'hero' %}
+<section id="{{ base }}" class="{{ base }} dark">
+    <div class="container">
+        <h2 class="{{ base }}__title">
+
+            <span id="heroTypedStrings">
+                <span>Knoxville City <strong>Hackathon</strong></span>
+            </span>
+            <span id="heroTyped"></span>
+        </h2>
+        <p>2019-03-02 - 2019-03-03</p>
+
+        <p class="countdown">
+            <span id="countdown" class="countdown__numbers"></span>
+        </p>
+
+        <div class="{{ base }}__description">
+            <p>Registrations are limited, save your spot!</p>
+        </div>
+        <div class="{{ base }}__buttons">
+            <a class="button" href="#register">
+                <span>Register Now</span>
+            </a>
+            <a class="button" href="#sponsor">
+                <span>Sponsor</span>
+            </a>
+        </div>
+    </div>
+</section>

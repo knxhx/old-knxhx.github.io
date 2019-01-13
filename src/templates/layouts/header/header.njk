@@ -1,0 +1,37 @@
+{% set base = 'header' %}
+{% set navigation = [
+    {
+        title: 'About',
+        link: '#about'
+    },
+    {
+        title: 'Schedule',
+        link: '#schedule'
+    },
+    {
+        title: 'Register',
+        link: '#register'
+    },
+    {
+        title: 'Faq',
+        link: '#faq'
+    },
+    {
+        title: 'Contact',
+        link: '#contact'
+    }
+] %}
+<header id="{{ base }}" class="{{ base }}">
+    <div class="container">
+        <h1 class="screen-reader-text">Knoxville City Hackathon</h1>
+        <nav class="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <ul class="navigation__list">
+                {% for item in navigation %}
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="{{ item.link }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>
