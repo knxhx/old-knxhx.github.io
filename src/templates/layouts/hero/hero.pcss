@@ -1,33 +1,46 @@
 .hero {
     position: relative;
+    z-index: 2;
     padding-top: 20.99vw;
-    padding-bottom: 3rem;
-    margin-bottom: 150px;
+    padding-bottom: 5rem;
+    margin-bottom: 10rem;
     color: var(--Brand__Light);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--Brand__Dark);
-    //background: linear-gradient(0deg, var(--Brand__Orange), var(--Brand__GrayDark));
-    // background-size: 450% 450%;
+    /* background: linear-gradient(0deg, var(--Brand__Orange), var(--Brand__GrayDark)); */
+    /* background-size: 450% 450%; */
     animation: Gradient 10s ease infinite;
 
     @media (--TabletLandscapeUp) {
         padding-top: 10rem;
     }
 
-    &:after {
+    &__background {
+        background-color: rgba(45, 48, 62, .7);
+        top: -10vh;
+        right: -10vh;
+        left: -10vh;
+        bottom: -10vh;
+        z-index: -1;
+        position: absolute;
+        transform: rotate(5deg);
+        overflow: hidden;
+    }
+
+    &__backgroundImage {
         content: "";
         position: absolute;
+        z-index: -5;
+        top: 0;
         right: 0;
         left: 0;
-        width: 0;
-        height: 0;
-        bottom: -200px;
-        border-top: 200px solid var(--Brand__Dark);
-        border-right: 0 solid transparent;
-        border-left: 100vw solid transparent;
+        bottom: 0;
+        background: linear-gradient(rgba(45, 48, 62, .7), rgb(39, 95, 61)), url(https://i.imgur.com/IAYcxTG.jpg);
+        background-size: cover;
 
+        filter: blur(4px);
+        overflow: hidden;
     }
 
     & .container {
