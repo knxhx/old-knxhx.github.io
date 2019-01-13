@@ -3,6 +3,10 @@
     padding-bottom: 2rem;
     background-color: var(--Brand__Dark);
 
+    & a {
+        color: var(--Brand__Dark);
+    }
+
     &__title {
         margin-bottom: 1em;
     }
@@ -12,15 +16,8 @@
         list-style-type: none;
 
         @media (--TabletLandscapeUp) {
-            display: grid;
-            justify-content: space-between;
-            grid-template-columns: repeat(auto-fit, 300px);
-            grid-template-columns: 47.5% 47.5%;
+            column-count: 2;
         }
-    }
-
-    & a {
-        color: var(--Brand__Dark);
     }
 
     &__question {
@@ -36,7 +33,9 @@
 
     &__ask {
         margin-top: 0;
+        padding-bottom: .5em;
         font-size: 1.2em;
+        border-bottom: 1px dashed;
     }
 
     &__answer {
