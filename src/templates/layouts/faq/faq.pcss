@@ -13,10 +13,14 @@
         left: 0;
         width: 0;
         height: 0;
-        top: -200px;
-        border-bottom: 200px solid var(--Brand__Dark);
+        top: -20vw;
+        border-bottom: 20vw solid var(--Brand__Dark);
         border-right: 0 solid transparent;
         border-left: 100vw solid transparent;
+        @media (--TabletPortraitUp) {
+            top: -150px;
+            border-bottom: 150px solid var(--Brand__Dark);
+        }
     }
 
     &:after {
@@ -26,10 +30,14 @@
         left: 0;
         width: 0;
         height: 0;
-        bottom: -200px;
-        border-top: 200px solid var(--Brand__Dark);
+        bottom: -20vw;
+        border-top: 20vw solid var(--Brand__Dark);
         border-right: 0 solid transparent;
         border-left: 100vw solid transparent;
+        @media (--TabletPortraitUp) {
+            bottom: -150px;
+            border-top: 150px solid var(--Brand__Dark);
+        }
     }
 
     & a {
