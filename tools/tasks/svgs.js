@@ -8,7 +8,6 @@ import rename from 'gulp-rename';
 
 function svgs (cb) {
   const assets = config.svgs.map(svg => `${paths.src.svgs}/${svg}.svg`);
-  console.log(assets)
   return pump(
     [
       src(assets),
