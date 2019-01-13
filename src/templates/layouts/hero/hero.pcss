@@ -1,17 +1,33 @@
 .hero {
+    position: relative;
     padding-top: 20.99vw;
     padding-bottom: 3rem;
+    margin-bottom: 150px;
     color: var(--Brand__Light);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--Brand__Dark);
     //background: linear-gradient(0deg, var(--Brand__Orange), var(--Brand__GrayDark));
-    background-size: 450% 450%;
+    // background-size: 450% 450%;
     animation: Gradient 10s ease infinite;
 
     @media (--TabletLandscapeUp) {
         padding-top: 10rem;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        bottom: -200px;
+        border-top: 200px solid var(--Brand__Dark);
+        border-right: 0 solid transparent;
+        border-left: 100vw solid transparent;
+
     }
 
     & .container {
