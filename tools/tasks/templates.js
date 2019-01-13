@@ -13,7 +13,7 @@ import { resolve } from 'path';
 
 const inlineFiles = {
   css: `${root}/dist/styles/critical.css`,
-  svgSprite: `${root}/dist/styles/sprite.svg`
+  svgSprite: `${root}/dist/svgs/sprite.svg`
 };
 
 const criticalCSS = existsSync(inlineFiles.css)
