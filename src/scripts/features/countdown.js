@@ -14,6 +14,7 @@ function getCountdownInterval (start, end) {
 
 function countdownRender (element, countdownObject) {
   const { months, days, hours, minutes, seconds } = countdownObject;
+  console.log(countdownObject)
 
   const twoDigits = int => 9 < int ? int : `0${int}`;
 
@@ -31,8 +32,8 @@ function countdown (selector, options = {}) {
 
   const {
           // Destructure and set defaults
-          startDate = new Date(2000, 0, 1),
-          endDate   = new Date()
+          startDate = Date.now(),
+          endDate   = new Date(2000, 2, 2)
         } = options;
 
   // Initial Run
