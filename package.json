@@ -1,0 +1,80 @@
+{
+  "name": "knoxville-city-hackathon",
+  "author": {
+    "name": "Michael Mizner",
+    "email": "mike@mizner.io",
+    "url": "https://mizner.io"
+  },
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "browserslist": [
+    ">0.25%",
+    "not op_mini all",
+    "not Opera > 0"
+  ],
+  "watch": {
+    "port": 5582,
+    "externalIP": false
+  },
+  "svgs": [
+    "fa/brands/slack-hash",
+    "fa/brands/facebook",
+    "fa/brands/instagram",
+    "fa/brands/twitter",
+    "fa/solid/users",
+    "fa/solid/heart",
+    "fa/solid/envelope"
+  ],
+  "scripts": {
+    "start": "NODE_ENV=development gulp start",
+    "build": "NODE_ENV=development gulp build",
+    "prod": "NODE_ENV=production gulp prod"
+  },
+  "dependencies": {
+    "core-js": "^2.5.7",
+    "countdown": "^2.6.0",
+    "ramda": "^0.26.1",
+    "sanitize.css": "^8.0.0",
+    "scrolldir": "^1.5.0",
+    "smoothscroll-polyfill": "^0.4.3",
+    "typed.js": "^2.0.9",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "@csstools/postcss-sass": "^3.0.0",
+    "autoprefixer": "^9.4.4",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "debounce": "^1.2.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-noop": "^1.0.0",
+    "gulp-nunjucks": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-symbols": "^3.2.3",
+    "gulp-svgo": "^2.1.0",
+    "lost": "^8.3.0",
+    "nunjucks": "^3.1.6",
+    "postcss-calc": "^7.0.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nested": "^4.1.1",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-scss": "^2.0.0",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "pump": "^3.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-stream": "^5.2.1"
+  }
+}
