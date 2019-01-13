@@ -2,15 +2,21 @@
     font-family: var(--Font__Secondary);
     display: inline-block;
     border: .075em solid;
+    border-color: transparent;
+    border-radius: var(--Border__Radius);
+    background-color: var(--Brand__GrayDark);
     margin-bottom: 1em;
     margin-right: .5em;
-    background-color: var(--Brand__GrayDark);
-    border-color: transparent;
     color: var(--Brand__Light);
     padding: 1em;
     text-decoration: none;
-    border-radius: var(--Border__Radius);
     transition: 400ms ease background-color;
+    & .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .5em;
+    }
+
     &:hover {
         background-color: var(--Brand__Gray);
     }
@@ -19,6 +25,7 @@
 .dark .button {
     background-color: var(--Brand__Green);
     color: var(--Brand__Dark);
+
     &:hover {
         background-color: var(--Brand__Orange);
     }
