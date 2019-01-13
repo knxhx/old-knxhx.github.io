@@ -36,6 +36,10 @@
 
     &__dates {
         margin-top: .25em;
+        font-family: var(--Font__Secondary);
+        @media (--TabletPortraitUp) {
+            font-size: 2em;
+        }
     }
 
     &__title {
@@ -47,6 +51,7 @@
         }
 
         @media (--DesktopUp) {
+            min-height: 200px;
             font-size: 5rem;
         }
 
@@ -56,7 +61,7 @@
     }
 
     &__description {
-        max-width: 800px;
+        max-width: 700px;
     }
 }
 
