@@ -11,6 +11,12 @@
 .days {
     padding-left: 0;
     list-style-type: none;
+    @media (--DesktopLargeUp) {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 47.5% 47.5%;
+
+    }
 
     &__title {
         border-radius: var(--Border__Radius);
@@ -18,13 +24,16 @@
         color: var(--Brand__Green);
         padding: 1em;
         font-size: 6vw;
+        margin-top: .25em;
         margin-bottom: .5em;
         @media (--TabletPortraitUp) {
             font-size: 1.5em;
         }
+
     }
+
     &__item {
-        max-width: 900px;
+
     }
 
     & a {
