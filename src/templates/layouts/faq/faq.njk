@@ -1,0 +1,80 @@
+{% set base = 'faq' %}
+{% set questions = [
+         {
+         ask: "What is a hackathon?",
+         answer: "A hackathon is a marathon of innovation, usually 24-36 hours in which participants passionate about creating concepts and technology form teams and compete with other teams to generate, develop and/or implement a new idea from scratch in order to learn and have fun."
+         },
+         {
+         ask: "How much does it cost?",
+         answer: "$10. For $10, we will provide you with the venue, food, drinks, place to sleep if needed, Wi-Fi, etc. You just need to show up!"
+         },
+         {
+         ask: "Who can come?",
+         answer: "All residents ages 18 and up of Knoxville and the surrounding counties are more than welcome to register and attend. While there is no limitation to those outside of the area, please note that we cannot offer any travel reimbursements for this event."
+         },
+         {
+         ask: "Will there be free food, drinks, and caffeine?",
+         answer: "Yes! Absolutely! We will provide catered meals, drinks at all times, snack breaks, and endless caffeine."
+         },
+         {
+         ask: "Where do I sleep?",
+         answer: "We will have a designated quiet sleeping area on site, and you are encouraged to bring sleeping bags, blankets, pillows, toiletries, and anything else you need to sleep. There are no showers at the venue, so please be prepared to go without showering unless you have other accommodations."
+         },
+         {
+         ask: "When and where is Knoxville City Hackathon?",
+         answer: "Knoxville City Hackathon will take place on March 2nd and 3rd, at Pyxl's office in Downtown Knoxville on Gay St. <a href='https://goo.gl/maps/NkT2jdt1PcE2' target='_blank'>Click here for directions.</a>"
+         },
+         {
+         ask: "How do teams work?",
+         answer: "There is a maximum of 4 people per team. Once the idea brainstorming session is done, there will be an open mic and networking time to find a team. Everyone registered will also be invited to the Knoxville City Hackathon Slack team prior to the hackathon in order to network and discuss ideas."
+         },
+         {
+         ask: "Is there a code of conduct?",
+         answer: "Yes, we abide by the <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf' target='_blank'>Major League Hacking Code of Conduct.</a>"
+         },
+         {
+         ask: "Do I need to stay the entire time?",
+         answer: "Nope, we are not a lock-in. We realize that 28 hours is a long time, and that some people might have other commitments during that time. Feel free to stay and leave as you choose."
+         },
+         {
+         ask: "Where do I park?",
+         answer: "Free parking is available in the <a href='https://goo.gl/maps/cD2oy7TWDjP2' target='_blank'>State Street Garage</a>, two blocks from Pyxl's office."
+         },
+         {
+         ask: "I've never been to a hackathon before, what should I do?",
+         answer: "No worries at all. We will be providing mentors during the hackathon and running workshops, as well as providing food and drinks and a place to sleep if you don't have one. We will also have a Slack team for anyone to get help at during the hackathon. You don't need to be good at writing code or building things, this is a learning experience and chance to have fun above everything else!"
+         },
+         {
+         ask: "What should I bring?",
+         answer: "You will definitely need your laptop, phone, their chargers, as well as a valid government issued ID. Feel free to also bring along a sleeping bag, and we recommend some comfortable clothes."
+         },
+         {
+         ask: "What kind of things can we hack up? Are there any limits?",
+         answer: "You are not limited to what you can make, hack, or build for the hackathon except for the following restrictions:
+         <ul>
+             <li>It cannot be illegal in any way</li>
+             <li>It cannot go against the MLH code of conduct</li>
+             <li>It cannot compromise the integrity of the Pyxl networks, resources, or staff</li>
+         </ul>"
+         },
+         {
+         ask: "I don't know what to build — any ideas?",
+         answer: "Don't worry at all! We will walk you through how to brainstorm great ideas at the beginning of the Knoxville City Hackathon."
+         }
+] %}
+
+<section id="{{ base }}" class="{{ base }}">
+    <div class="container">
+        <header class="{{ base }}__header">
+            <h3 class="{{ base }}__title">Frequently Asked Questions</h3>
+        </header>
+        <ul class="{{ base }}__questions">
+            {% for question in questions %}
+                <li class="{{ base }}__question">
+                    <h4 class="{{ base }}__ask">{{ question.ask }}</h4>
+                    <p class="{{ base }}__answer">{{ question.answer | safe }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

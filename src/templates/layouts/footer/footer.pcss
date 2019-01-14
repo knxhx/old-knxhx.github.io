@@ -1,0 +1,34 @@
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--Brand__Dark);
+    color: var(--Brand__Light);
+
+
+    &__copyright {
+        & svg {
+            fill: var(--Brand__Pink);
+        }
+    }
+}
+
+
+.backToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    color: var(--Brand__Light);
+    background-color: var(--Brand__Dark);
+    text-decoration: none;
+
+    & span {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) rotate(-90deg);
+    }
+}
+

@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--Font__Primary);
+    font-size: var(--Font__BaseSize);
+    color: var(--Brand__Dark);
+    background-color: var(--Brand__Light);
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 2.75rem 0 1rem;
+    font-family: var(--Font__Secondary);
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+p {
+    line-height: 1.45em;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+        &:after {
+            color: inherit;
+        }
+    }
+}
+
+blockquote {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+hr {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+input:not([type="submit"]),
+textarea {
+    padding: .3em .25em;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.icon {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    user-select: none;
+    svg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

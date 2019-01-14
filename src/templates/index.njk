@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Knoxville City Hackathon - 2019-03-02 • 2019-03-03</title>
+    <meta name="description" content="Knoxville City Hackathon is coming on March 2nd through 3rd 2019, join us for a weekend of civic-minded innovation and collaboration downtown in our beloved city of Knoxville.">
+    <meta name="keywords" content="hackathon, open data, tennessee, code, knoxville">
+    <script async src="dist/scripts/main.js"></script>
+    {% if 'production' == mode %}
+        <style>{{ critical.styles | safe }}</style>
+    {% endif %}
+</head>
+<body>
+{{ svgSprite | safe }}
+<div id="wrapper">
+    <span id="top"></span>
+    <main>
+        {% include "layouts/header/header.njk" %}
+        {% include "layouts/hero/hero.njk" %}
+        {% include "layouts/about/about.njk" %}
+        {% include "layouts/schedule/schedule.njk" %}
+        {% include "layouts/faq/faq.njk" %}
+        {% include "layouts/register/register.njk" %}
+        {% include "layouts/contact/contact.njk" %}
+        {#{% include "layouts/sponsors/sponsors.njk" %}#}
+        {#{% include "layouts/partners/partners.njk" %}#}
+        {% include "layouts/footer/footer.njk" %}
+    </main>
+</div>
+<link rel="stylesheet" href="dist/styles/main.css">
+</body>
+</html>

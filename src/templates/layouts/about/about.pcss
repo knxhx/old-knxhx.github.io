@@ -1,0 +1,13 @@
+.about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--Brand__Light);
+
+    & .container {
+        @media (--DesktopLargeUp) {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 49.5% 49.5%;
+        }
+    }
+}

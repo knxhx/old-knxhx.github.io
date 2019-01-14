@@ -1,0 +1,29 @@
+.countdown {
+    max-width: 360px;
+    background-color: var(--Brand__Dark);
+    color: var(--Brand__Light);
+    border-radius: var(--Border__Radius);
+    padding: 1em;
+    margin: 0;
+
+    @media (--TabletPortraitUp) {
+        min-height: 220px;
+    }
+
+    &__numbers {
+        font-size: 7vw;
+        font-family: var(--Font__Secondary);
+
+        @media (--TabletPortraitUp) {
+            font-size: 2.5rem;
+        }
+
+        & span {
+            display: block;
+            line-height: 1.2em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
