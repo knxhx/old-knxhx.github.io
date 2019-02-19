@@ -1,5 +1,64 @@
 .sponsors {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 0em;
+    padding-bottom: 1rem;
     background-color: var(--Brand__Light);
 }
+.container-support {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align:center;
+  @media (max-width: 480px) {
+      width: 100%;
+  }
+}
+.item-support {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 25%;
+  margin-left: 50px;
+  @media (max-width: 480px) {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+[class*='col-'] {
+    float: left; 
+    min-height: 1px; 
+    padding: 1rem;
+    width: 16.66%; 
+}
+@media all and (min-width:801px){
+        .col-1{ width: 16.66%; padding: 1rem; }
+        .col-2{ width: 33.33%;    padding: 1rem; }
+        .col-3{ width: 50%; padding: 1rem; }
+        .col-4{ width: 83.33%;   padding: 1rem; }
+        .col-5{ width: 100%;   padding: 1rem; }
+        .col-6{ width: 100%;   padding: 1rem; }
+    }
+@media all and (max-width:800px){
+        .col-1{ width: 33.33%; padding: 1rem; }
+        .col-2{ width: 50%;    padding: 1rem; }
+        .col-3{ width: 83.33%; padding: 1rem; }
+        .col-4{ width: 100%;   padding: 1rem; }
+        .col-5{ width: 100%;   padding: 1rem; }
+        .col-6{ width: 100%;   padding: 1rem; }
+    }
+@media all and (max-width:650px){
+        .col-1{ width: 50%;  padding: 1rem;   }
+        .col-2{ width: 100%;  padding: 1rem;  }
+        .col-3{ width: 100%;  padding: 1rem;  }
+        .col-4{ width: 100%;  padding: 1rem;  }
+        .col-5{ width: 100%;  padding: 1rem;  }
+        .col-6{ width: 100%;  padding: 1rem;  }
+    }

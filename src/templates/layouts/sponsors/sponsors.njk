@@ -1,17 +1,39 @@
 {% set base = 'sponsors' %}
 {% set sponsors = [
     {
-        title: 'KnoxDevs',
-        link: '#'
+        title: 'Cigna',
+        link: 'https://www.cigna.com',
+        logo: 'logos/cigna.svg',
+        level: 'col-5'
     },
     {
-        title: 'KEC',
-        link: '#'
+        title: 'MapAnything',
+        link: 'https://mapanything.com/',
+        logo: 'logos/mapanything.svg',
+        level: 'col-3'
+    },
+    {
+        title: 'CodeTank Labs',
+        link: 'https://codetanklabs.com/',
+        logo: 'logos/codetanklabs.png',
+        level: 'col-3'
     }
 ] %}
 <section id="{{ base }}" class="{{ base }}">
     <div class="container">
-        <header>
-        </header>
+    <h3 class="{{ base }}__title ">Sponsors</h3>
+    <div class="container-support">
+        <div class="row">
+        {% for sponsor in sponsors %}
+            <div class="item-support">
+            <div class="{{ sponsor.level }}">
+                <a href="{{ sponsor.link }}">
+                    <img src="{{ sponsor.logo }}"></img>
+                </a>
+            </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
     </div>
 </section>

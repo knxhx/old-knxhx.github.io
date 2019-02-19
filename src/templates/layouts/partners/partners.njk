@@ -1,17 +1,51 @@
 {% set base = 'partners' %}
 {% set partners = [
     {
+        title: 'City of Knoxville',
+        link: 'https://knoxvilletn.gov',
+        logo: 'logos/cityofknoxville.svg',
+        level: 'col-4'
+    },
+    {
         title: 'KnoxDevs',
-        link: '#'
+        link: 'https://knoxdevs.com',
+        logo: 'logos/knoxdevs.svg',
+        level: 'col-4'
     },
     {
         title: 'KEC',
-        link: '#'
+        link: 'http://knoxec.com/',
+        logo: 'logos/kec.png',
+        level: 'col-3'
+    },
+    {
+        title: 'Premier Staffing Partners',
+        link: 'http://www.premierstaffingpartners.com/',
+        logo: 'logos/premier_staffing_partners.svg',
+        level: 'col-3'
+    },
+    {
+        title: 'Pyxl',
+        link: 'https://pyxl.com/',
+        logo: 'logos/pyxl.svg',
+        level: 'col-3'
     }
 ] %}
 <section id="{{ base }}" class="{{ base }}">
     <div class="container">
-        <header>
-        </header>
+    <h3 class="{{ base }}__title ">Partners</h3>
+    <div class="container-support">
+        <div class="row">
+        {% for partner in partners %}
+            <div class="item-support">
+            <div class="{{ partner.level }}">
+                <a href="{{ partner.link }}">
+                    <img src="{{ partner.logo }}"></img>
+                </a>
+            </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
     </div>
 </section>
