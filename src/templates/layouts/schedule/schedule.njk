@@ -63,12 +63,7 @@
   ]%}
 <section id="{{ base }}" class="{{ base }}">
     <div class="container">
-        <header class="{{ base }}__header screen-reader-text">
-            <h3 class="{{ base }}__title">Schedule</h3>
-        </header>
-        <article>
-        <p>Below is the draft schedule:</p>
-        </article>
+        <h3 class="{{ base }}__title">Draft Schedule</h3>
         <ul class="days">
             {% for day in days %}
                 {# <pre>{{ day | dump(2) }}</pre> #}
