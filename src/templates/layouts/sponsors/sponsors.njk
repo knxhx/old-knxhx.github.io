@@ -4,33 +4,32 @@
         title: 'Cigna',
         link: 'https://www.cigna.com',
         logo: 'logos/cigna.svg',
-        level: 'col-4'
+        level: 'col-3'
     },
     {
         title: 'MapAnything',
         link: 'https://mapanything.com/',
         logo: 'logos/mapanything.svg',
-        level: 'col-4'
+        level: 'col-3'
     },
     {
         title: 'CodeTank Labs',
         link: 'https://codetanklabs.com/',
         logo: 'logos/codetanklabs.png',
-        level: 'col-4'
+        level: 'col-3'
     },
     {
         title: 'ORNL Federal Credit Union',
         link: 'https://www.ornlfcu.com',
         logo: 'logos/ORNLFCU-Logo_Blue.png',
-        level: 'col-4'
+        level: 'col-3'
     }
 ] %}
 <section id="{{ base }}" class="{{ base }}">
     <div class="container">
     <h3 class="{{ base }}__title ">Sponsors</h3>
     <div class="container-support">
-        <div class="row">
-        {% for sponsor in sponsors %}
+       {% for sponsor in sponsors %}
             <div class="item-support">
             <div class="{{ sponsor.level }}">
                 <a href="{{ sponsor.link }}">
@@ -39,7 +38,6 @@
             </div>
             </div>
         {% endfor %}
-        </div>
     </div>
     </div>
 </section>
