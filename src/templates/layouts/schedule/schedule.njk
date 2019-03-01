@@ -5,14 +5,26 @@
       date: '3/02',
       events: [
         {
-          title: 'Breakfast',
+          title: 'Breakfast and Sign-In',
           location: 'Pyxl',
           time: '8:00',
           meridiem: 'am'
         },
         {
+          title: 'Opening Ceremony',
+          location: 'Pyxl',
+          time: '9:00',
+          meridiem: 'am'
+        },
+        {
+          title: 'MapAnything Tech Talk',
+          location: 'Pyxl',
+          time: '11:30',
+          meridiem: 'am'
+        },
+        {
           title: 'Lunch',
-          location: 'Market Square',
+          location: 'Pyxl',
           time: '12:00',
           meridiem: 'pm'
         },
@@ -42,28 +54,28 @@
         },
         {
           title: 'Hack Submission Deadline',
-          location: '',
+          location: 'https://knxhx.devpost.com',
           time: '11:00',
           meridiem: 'am'
         },
         {
-          title: 'Hack Presentations & Judging',
-          location: 'At Your Tables',
-          time: '1:00',
+          title: 'Hack Expo',
+          location: 'Pyxl',
+          time: '11:15',
           meridiem: 'pm'
         },
         {
-          title: 'Closing Ceremony',
+          title: 'Finalist Demos and Closing Ceremony',
           location: 'Scruffy City Hall',
-          time: 'Right after Presentation!',
-          meridiem: ''
+          time: '3:00',
+          meridiem: 'pm'
         }
       ]
     }
   ]%}
 <section id="{{ base }}" class="{{ base }}">
     <div class="container">
-        <h3 class="{{ base }}__title">Draft Schedule</h3>
+        <h3 class="{{ base }}__title">Schedule</h3>
         <ul class="days">
             {% for day in days %}
                 {# <pre>{{ day | dump(2) }}</pre> #}
